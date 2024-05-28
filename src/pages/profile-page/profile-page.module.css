@@ -1,0 +1,97 @@
+.profilePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 20px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.profileBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+
+    height: 300px;
+}
+
+.profileBlockTitle {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 12px 0;
+}
+
+.informationContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.passwordInformation {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 200px;
+    column-gap: 12px;
+}
+
+.listWrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    row-gap: 4px;
+    padding-right: 4px;
+}
+
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.listItem:hover {
+    background-color: rgb(243, 244, 246);
+}
+
+.listItem.alert {
+    background-color: rgba(255, 121, 101, 0.3);
+}
+
+.listItem.alert:hover {
+    background-color: rgba(255, 121, 101, 0.4);
+}
+
+.listItem.warning {
+    background-color: rgba(247, 178, 0, 0.3);
+}
+
+.listItem.warning:hover {
+    background-color: rgba(247, 178, 0, 0.4);
+}
+
+.itemTitle {
+    font-size: 18px;
+}
+
+.itemInstructor, .itemDeadline {
+    color: hsl(0, 0%, 24%);
+    font-weight: 300;
+}
+
+.worksBlock {
+    height: 500px;
+}

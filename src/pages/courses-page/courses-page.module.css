@@ -1,0 +1,46 @@
+.coursesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.courseBlock {
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    /*height: 100px;*/
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.courseTitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.courseTutor {
+    font-size: 14px;
+    color: hsl(0, 0%, 38%);
+}
+
+
+.filter {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: 600px 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.test {
+    color: hsl(0, 0%, 38%);
+}

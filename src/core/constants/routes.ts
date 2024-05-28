@@ -1,0 +1,1 @@
+export const LOGOUT_RESTRICTED_PAGES: string[] = ['/profile']

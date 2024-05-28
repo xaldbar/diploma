@@ -1,0 +1,69 @@
+.coursesPage {
+}
+
+.coursesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.courseBlock {
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.courseBlock.alert {
+    border: 2px solid red;
+}
+
+.courseBlock.warning {
+    border: 2px solid #ffc400;
+}
+
+.courseTitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.courseTutor {
+    font-size: 14px;
+    color: hsl(0, 0%, 38%);
+}
+
+.workDeadline {
+    font-size: 14px;
+    color: hsl(0, 0%, 38%);
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: 400px 400px 200px 1fr;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.test {
+    color: hsl(0, 0%, 38%);
+}
+
+.mark {
+    color:  hsl(0, 0%, 38%);
+    font-weight: 700;
+}

@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    column-gap: 12px;
+}
+
+.coursePageTitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+    column-gap: 4px;
+}
+
+.edit, .delete {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.edit {
+    color: rgb(0 91 255);
+
+}
+
+.edit:hover {
+    color: rgb(0 69 189)
+}
+
+.delete {
+
+    color: rgb(211 0 61);
+}
+
+.delete:hover {
+    color: rgb(142 46 54);
+}
+
+.separator {
+    background-color: #eeee;
+    height: 1px;
+}
+
+.content {
+
+}
+
+.description,
+.worksList {
+    margin-top: 16px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.blockTitle {
+    font-size: 24px;
+}
+.descriptionText {
+    margin-top: 12px;
+    font-size: 16px;
+    padding-right: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.listWrapper {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 12px;
+}
+
+.courseBlock {
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.courseBlock.alert {
+    border: 2px solid red;
+}
+
+.courseBlock.warning {
+    border: 2px solid #ffc400;
+}
+
+.courseTitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.courseTutor {
+    font-size: 14px;
+    color: hsl(0, 0%, 38%);
+}
+
+.workDeadline {
+    font-size: 14px;
+    color: hsl(0, 0%, 38%);
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.worksTabList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.filter {
+    margin-top: 20px;
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.markTab {
+    padding-top: 20px;
+}

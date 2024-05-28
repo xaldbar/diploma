@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.link {
+    font-family: "Chivo", sans-serif;
+    text-decoration: none;
+    color: rgb(0 91 255);
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: rgb(47, 155, 249);
+}
