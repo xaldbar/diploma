@@ -38,14 +38,34 @@ let COURSES_MOCK: ProfileBlockItem[] = [
 	{
 		id: '0',
 		name: 'Математический анализ',
-		instructor: 'Битюков Юрий Иванович',
-	}
+		instructor: 'Евгения Смирнова',
+	},
+	{
+		id: '0',
+		name: 'Дискретный Анализ',
+		instructor: 'Артем Лазарев',
+	},
+	{
+		id: '0',
+		name: 'Компьютерные сети',
+		instructor: 'Анна Кузнецова',
+	},
+	{
+		id: '0',
+		name: 'Философия',
+		instructor: 'Даниил Федоров',
+	},
+	{
+		id: '0',
+		name: 'Компьютерная графика',
+		instructor: 'Ольга Морозова',
+	},
 ]
 
 let WORKS_MOCK: ProfileBlockItem[] = [
 	{
 		id: '0',
-		name: 'Дипломная работа',
+		name: 'Лабораторная работа',
 		instructor: 'Какой-то Преподователь',
 		deadline: '28.05.24'
 	}
@@ -167,7 +187,7 @@ const ProfilePage = () => {
 
 	const renderWorksContent = () => {
 		return (
-			<ProfileBlockList items={WORKS_MOCK} type={'works'}/>
+			<ProfileBlockList items={WORKS_MOCK.slice(1)} type={'works'}/>
 		)
 	}
 
