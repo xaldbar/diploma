@@ -1,0 +1,27 @@
+services:
+  group-works-api:
+    build: ./server
+    ports:
+      - "8081:8081"
+    env_file:
+      - ./server/.env
+    environment:
+      - DOCKER=true
+    depends_on:
+      - group-works-db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  group-works-db:
+    build: ./server/.dev/database/
+    env_file:
+      - ./server/.dev/database/local.env
+    ports:
+      - "2002:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U themes-user -d themes"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped

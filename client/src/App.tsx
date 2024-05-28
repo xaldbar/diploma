@@ -23,7 +23,7 @@ function App() {
 		  <>
 			  {!isLoginPage && <Header/>}
 			  <Routes>
-				  <Route path={'/'} element={<Navigate to="/courses" replace />}/>
+				  <Route path={'/'} element={<Navigate to={toLoginPage()} replace />}/>
 				  <Route path={toCoursesPage()} element={<CoursesPage/>}/>
 				  <Route path={'/courses/:id'} element={<CoursePage/>}/>
 
